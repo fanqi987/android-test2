@@ -16,4 +16,57 @@
         android:layout_height="wrap_content"
         android:text="测试外部自定义内容提供者"></Button>
 
+    <Button
+        android:id="@+id/notification_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试通知"></Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短信from:"></TextView>
+
+    <TextView
+        android:id="@+id/sender_number_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短信内容："></TextView>
+
+    <TextView
+        android:id="@+id/sender_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短信to:"></TextView>
+
+    <EditText
+        android:id="@+id/send_number_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="编写短信内容"></TextView>
+
+    <EditText
+        android:id="@+id/send_content_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送短信"></Button>
 </LinearLayout>
