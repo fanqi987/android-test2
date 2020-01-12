@@ -43,7 +43,10 @@ public class TestContentResolverActivity extends BaseActivity {
         lv = findViewById(R.id.content_resolver_lv);
         nameTv = findViewById(R.id.content_resolver_name_tv);
         numberTv = findViewById(R.id.content_resolver_number_tv);
-        readPhones();
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) ==
+                PackageManager.PERMISSION_GRANTED) {
+            readPhones();
+        }
         adapter = new ContentResolverTestAdapter(this, R.layout.content_resolver, phones);
         lv.setAdapter(adapter);
 
