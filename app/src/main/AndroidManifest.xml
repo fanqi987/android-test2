@@ -26,7 +26,8 @@
         <activity android:name=".content.provider.TestContentResolverActivity" />
         <activity android:name=".TestContentProviderActivity" />
         <activity android:name=".NotificationTestActivity" />
-
+        <activity android:name=".MusicTestActivity" />
+        <activity android:name=".VideoTestActivity" />
         <!--       注册短信广播，用了动态的注册，并使用了自定义action -->
         <!--        <receiver android:name=".broadcast.SmsTestSendBroadcast">-->
         <!--            <intent-filter>-->

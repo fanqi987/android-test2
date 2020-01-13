@@ -235,6 +235,22 @@ public class TestActivity extends BaseActivity implements ActivityCompat.OnReque
                 startActivityForResult(i, CHOOSE_PHOTO);
             }
         });
+
+        findViewById(R.id.music_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TestActivity.this, MusicTestActivity.class));
+            }
+        });
+
+        findViewById(R.id.video_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TestActivity.this, VideoTestActivity.class));
+            }
+        });
+
+
     }
 
     private void dealPhotoKitKat(Intent data) {
